@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  padding-left: 50px;
+}
+
+.container {
+  max-width: 600px;
+  background: rgba(5, 8, 1, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(244, 160, 3, 0.3);
+  color: #fff;
+}
+
+h1 {
+  color: #f77f00;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.description {
+  margin-bottom: 25px;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f77f00;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #f77f00;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 15px 25px;
+  background-color: #191919;
+  color: #f77f00;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #f77f00;
+  color: #050801;
+  box-shadow: 0 0 5px #f77f00, 0 0 25px #f77f00, 0 0 50px #f77f00, 0 0 200px #f77f00;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.result-container {
+  background: rgba(244, 71, 3, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #f77f00;
+}
+
+.result-container h2 {
+  color: #f77f00;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#calculation {
+  margin-bottom: 15px;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f77f00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    padding: 12px 20px;
+  }
+}
